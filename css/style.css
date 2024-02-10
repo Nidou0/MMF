@@ -1498,6 +1498,25 @@ h6 { font-size: 16px; }
 /*	09) DIZME SERVICES
 /*---------------------------------------------------*/
 
+.dizme_tm_main_title ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dizme_tm_main_title li {
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
+}
+.dizme_tm_main_title li::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    color: #ffffff; /* Color of the bullet point */
+    font-size: 1.2em; /* Adjust the size of the bullet point */
+    margin-right: 5px; /* Adjust the spacing between the bullet point and text */
+    position: absolute;
+    left: -15px; /* Adjust the horizontal position of the bullet point */
+}
 .dizme_tm_full_link{
 	position: absolute;
 	top: 0px;
